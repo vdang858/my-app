@@ -1,7 +1,7 @@
 // This shows a simple build wrapper example, using the AnsiColor plugin.
 node {
    stage('Send email'){
-      build.previousBuild.result.toString().equals('FAILURE')
+      echo 'send email'
    }
    stage('SCM Checkout'){
       git 'https://github.com/vdang858/my-app.git'
